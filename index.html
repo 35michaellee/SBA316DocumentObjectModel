@@ -4,44 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SBA316DocumentObjectModel</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div>
-        <h1 id="myHeader">Welcome to my Blog about The Document Object Model</h1>
-    </div>
-    <div id="clickable">
-        <h1>This Box is clickable to change color</h1>
-    </div>
-    <div>
-        <h3>Dont Click the descriptions or you will be alerted!</h3>
-    </div>
-    <div id="descriptions">
-        <div class="box">
-            <p></p>
+    <h1 id="myHeader">Welcome to my Blog about The Document Object Model</h1>
+    <main>
+        <div id="clickable">
+            <h1>This Box is clickable to change color</h1>
         </div>
-        <div class="box">
-            <h3>Origins of the DOM (Document Object Model):</h3>
-            <p>The Document Object Model, or DOM, originated in the early stages of web development as a standardized way to represent and interact with documents in a browser. Its roots can be traced back to the collaboration between the World Wide Web Consortium (W3C) and browser vendors to establish a common interface for scripting languages like JavaScript. The DOM provides a structured representation of HTML and XML documents, organizing them as a tree-like structure of objects. This model allows developers to dynamically manipulate the content, structure, and style of a document, enabling the creation of interactive and dynamic web pages.</p>
-        </div>
-        <div class="box">
-            <h3>Use of the DOM (Document Object Model):</h3>
-            <p>The DOM serves as an essential interface between web content and scripts. It allows developers to access, modify, and manipulate the elements within an HTML or XML document using programming languages such as JavaScript. Through the DOM, developers can dynamically update the content of a webpage, respond to user interactions, and create responsive and interactive user interfaces. The DOM is a crucial part of modern web development, facilitating the creation of dynamic, data-driven applications and enhancing the overall user experience by enabling seamless communication between the browser and the underlying web page structure.</p>
-        </div>
-        <div class="box">
-            <h3>Future of the DOM (Document Object Model):</h3>
-            <p>The future of the DOM involves ongoing improvements to enhance its efficiency, performance, and capabilities. As web technologies continue to advance, the DOM is likely to evolve to better support the development of complex and highly interactive web applications. Innovations such as Web Components aim to streamline the creation and reuse of custom elements, offering a more modular and maintainable approach to building web interfaces. Additionally, efforts to improve browser performance and optimize rendering processes will contribute to a more responsive and user-friendly experience. The continued collaboration between web standards organizations, browser vendors, and the developer community will shape the future of the DOM, ensuring that it remains a foundational and adaptable tool for web development.</p>
-        </div>
-    </div>
-    <div id="learnMore">
-        <h1>wanna learn more?</h1>
-        <button id="learnMoreButton">Learn More</button>
 
-    </div>
+        <section id="descriptions">
+            <div class="box">
+                <h3>Origins of the DOM :</h3>
+                <p>The Document Object Model, or DOM, originated in the early stages of web development as a standardized way to represent and interact with documents in a browser. Its roots can be traced back to the collaboration between the World Wide Web Consortium (W3C) and browser vendors to establish a common interface for scripting languages like JavaScript. The DOM provides a structured representation of HTML and XML documents, organizing them as a tree-like structure of objects. This model allows developers to dynamically manipulate the content, structure, and style of a document, enabling the creation of interactive and dynamic web pages.</p>
+            </div>
+            <div class="box">
+                <h3>Use of the DOM (Document Object Model):</h3>
+                <p>The DOM serves as an essential interface between web content and scripts. It allows developers to access, modify, and manipulate the elements within an HTML or XML document using programming languages such as JavaScript. Through the DOM, developers can dynamically update the content of a webpage, respond to user interactions, and create responsive and interactive user interfaces. The DOM is a crucial part of modern web development, facilitating the creation of dynamic, data-driven applications and enhancing the overall user experience by enabling seamless communication between the browser and the underlying web page structure.</p>
+            </div>
+            <div class="box">
+                <h3>Future of the DOM (Document Object Model):</h3>
+                <p>The future of the DOM involves ongoing improvements to enhance its efficiency, performance, and capabilities. As web technologies continue to advance, the DOM is likely to evolve to better support the development of complex and highly interactive web applications. Innovations such as Web Components aim to streamline the creation and reuse of custom elements, offering a more modular and maintainable approach to building web interfaces. Additionally, efforts to improve browser performance and optimize rendering processes will contribute to a more responsive and user-friendly experience. The continued collaboration between web standards organizations, browser vendors, and the developer community will shape the future of the DOM, ensuring that it remains a foundational and adaptable tool for web development.</p>
+            </div>
+        </section>
+
+        <section id="learnMore">
+            <h1>wanna learn more?</h1>
+            <button id="learnMoreButton">Learn More</button>
+        </section>
+
+        <section id="options">
+            <button id="secretButton">wanna know a secret? CLICK ME</button>
+            <h1 id="secretTitle">These are the most commonly used DOM methods used on sites like this!</h1>
+            <div id="domFunctionsContainer"></div>
+                <button id="dateUpdateButton">click here to update your date and time visited at the bottom of the page</button>
+            </div>
+            
+        </section>
+    </main>
+
     
-    <button id="secretButton">wanna know a secret? CLICK ME</button>
-    <h1 id="secretTitle">These are the most commonly used DOM methods used on sites like this!</h1>
-    <div id="domFunctionsContainer"></div>
-    <button id="dateUpdateButton">click here to update your date and time visited at the bottom of the page</button>
     <footer>
         <h1>Join our Email list</h1>
         <form action="#" method="post" onsubmit="return validateForm()">
@@ -52,8 +54,14 @@
             <input type="email" id="email" name="email" required placeholder="Enter your email">
     
             <input type="submit" value="Submit">
+        </form>
     </footer>
 
     <script src="index.js" defer></script>
 </body>
 </html>
+
+
+
+
+

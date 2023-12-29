@@ -1,9 +1,9 @@
 
-// Check if the element is found
-
-// function changeColor(){
-//     alert('Button clicked!');
-// }
+//browser model
+window.onload = function () {
+    window.alert('Welcome to my Blog about The Document Object Model!');
+  };
+//browser 2
 function changeColor() {
     var div = document.getElementById("clickable"); // can a modulize this somehow ?
     var colors = ["red", "green", "blue"];
@@ -22,14 +22,6 @@ boxes.forEach(function(box) {
         alert('Element clicked!');
     });
 });
-
-//add new suprise information 
-
-// let infoparent= document.getElementById('descriptions');
-
-//  button.addEventListener('click', function(){
-//     //add dom manipulation functions 
-//  })
 
 
 let domFunctions = [
@@ -82,8 +74,29 @@ secretButton.addEventListener('click', function() {
   newP.setAttribute('id',"date")
   let newDate= new Date();
 
-  
+  document.addEventListener('DOMContentLoaded', function () {//needed to add this so that the page didntbreak directly 
+    
+    const form = document.querySelector('form');
+    const emailInput = document.getElementById('email');
 
+    // Add an event listener for form submission
+    form.addEventListener('submit', function (event) {
+        // Validate the email field on submission
+        if (!isValidEmail(emailInput.value)) {
+            // Display an alert for invalid email
+            alert('Invalid email address. Please enter a valid email.');
+
+            // Prevent the default form submission if validation fails cuz it kept just saying the page fails
+            event.preventDefault();
+        }
+    });
+
+    //  validate email format
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+});
   // Set the text content of the paragraph
   newP.textContent = 'You have visited the site at: '+ newDate;
 

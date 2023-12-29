@@ -1,0 +1,44 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+.box {
+    background-color: #f8f8f8;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+
+#descriptions {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+h1, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#options{
+    display: flex;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
